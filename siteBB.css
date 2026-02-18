@@ -1,0 +1,162 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+	font-family: Verdana, sans-serif; 
+	color: BlueViolet;
+    font-size: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+h1 {
+    font-size: 250%; 
+    text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+h2 {
+    font-size: 170%;
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+h3 {
+    font-size: 130%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+p,td,li {
+    font-size: 130%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+ul {
+    font-size: 100%;
+	padding-right: 15px;
+	padding-left: 90px;
+}
+h4 {
+	font-size: 100%;
+	font-style:italic;
+	text-align:right;
+	font-weight:normal;
+}
+h5 {
+	font-size: 130%;
+	font-style:italic;
+	text-align:right;
+	font-weight:normal;
+	background-color:Plum;
+}
+
+a:link {
+    color: Indigo;
+	text-decoration: underlined;
+}
+a:visited {
+    color: BlueViolet;
+}
+a:active {
+    color:BlueViolet;
+}
+a:hover {
+    color: BlueViolet;
+    text-decoration: none;
+}
+.centrer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rouge {
+color: red;
+}
+#header{
+	height:0 auto;
+	text-align: center;
+	padding:50px
+}
+.yellow{
+	color:yellow;
+	text-decoration: underline;
+}
+
+.balise{ 									/* contiendra les éléments à disposer en "grille" */
+        display: grid; 						/*on active la propriété de la grille css qui permet entre autres, comme ici, de placer différents blocs côte à côte*/
+        grid-template-columns: 60% 40%; 	/* proportion de la largeur disponible sur la page occupée respectivement par les colonnes col1 et col2*/
+        margin-top: 10px; 					/*espace au dessus du div contenant les colonnes col1 et col2*/
+        margin-bottom: 10px; 				/*espace sous le div contenant les colonnes col1 et col2*/
+    }
+col1{
+        margin-left: 5px; 					/*marge à gauche de la colonne col1*/
+    }
+col2{
+        margin-right: 5px; 					/*marge à gauche de la colonne col2*/
+        margin-left: 5px; 					/*marge à gauche de la colonne col2, entre les deux colonnes*/
+    }
+.border {
+  border: 3px solid #ccc;
+  margin:0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100px;
+    grid-gap: 20px;
+	padding:15px
+}
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100px 100px;
+    grid-gap: 20px;
+	padding:15px
+}
+.grid-item {
+    display: flex;
+	font-size: 130%;
+    align-items: center;
+    justify-content: center;
+	border: 3px solid BlueViolet;
+	border-radius: 30px;
+	text-align:center;
+}
+
+.grid-container-films {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+	padding:15px
+}
+.grid-item-films {
+    display: flex;
+	font-size: 100%;
+    align-items: center;
+    justify-content: center;
+	border:none;
+	text-align:center;
+}
+.grid-container-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+	padding:15px
+}
+.grid-item-photos {
+    display: flex;
+	font-size: 100%;
+    align-items: center;
+    justify-content: center;
+	border:none;
+	text-align:center;
+}
+.imageflottante{
+float: right;
+}
+video {
+	border-radius:30px;
+	border: 3px solid BlueViolet;
+}
