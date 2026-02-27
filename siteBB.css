@@ -5,7 +5,7 @@ html, body {
 }
 body {
 	font-family: Verdana, sans-serif; 
-	color: BlueViolet;
+	color: Indigo;
     font-size: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -52,7 +52,7 @@ h5 {
 }
 
 a:link {
-    color: Indigo;
+    color: BlueViolet;
 	text-decoration: underlined;
 }
 a:visited {
@@ -120,7 +120,7 @@ col2{
 	font-size: 130%;
     align-items: center;
     justify-content: center;
-	border: 3px solid BlueViolet;
+	border: 3px solid Indigo;
 	border-radius: 30px;
 	text-align:center;
 }
@@ -139,11 +139,19 @@ col2{
 	border:none;
 	text-align:center;
 }
+.grid-item-films2 {
+    display: flex;
+	font-size: 100%;
+    align-items: center;
+    justify-content: center;
+	border:none;
+	text-align:left;
+}
 .grid-container-photos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-	padding:15px
+    grid-gap: 0px;
+	padding:0px
 }
 .grid-item-photos {
     display: flex;
@@ -152,11 +160,22 @@ col2{
     justify-content: center;
 	border:none;
 	text-align:center;
+	color:plum;
+}
+.grid-item-comment {
+    display: flex;
+	font-size: 80%;
+    align-items: top;
+    justify-content: center;
+	border:none;
+	text-align:center;
+	color:plum;
+	padding-bottom:20px;
 }
 .imageflottante{
 float: right;
 }
 video {
 	border-radius:30px;
-	border: 3px solid BlueViolet;
+	border: 3px solid Indigo;
 }

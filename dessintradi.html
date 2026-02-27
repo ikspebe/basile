@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>BB - Dessin traditionnel</title>
-  <link rel="stylesheet" href="siteBB.css">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <style> body {background-color: MediumOrchid}
-</style> 
- </head>
+	<head>
+	<title>BB - Dessin</title>
+	<link rel="stylesheet" href="siteBB.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style> body {background-color: Indigo}</style> 
+	<style>h2{color:plum}</style>
+	<style>p{color:plum}</style>
+	<style>h1{color:plum}</style>
+	<style>h4{color:plum}</style>
+</head>
  
  
  <body>
@@ -15,7 +18,6 @@
 <h4><a href="index.html" >Retour à l'accueil</a></h4>
 <p>Voici des dessins et peintures que j’ai faits dans le cadre des cours de Vivien Fawaz pour certains.<br/>
 <i>Cliquer pour agrandir la photo.</i></p>
-<h3>Peintures (acrylique)</h3>
 <div class="grid-container-photos">
 	<div class="grid-item-photos">
 		<img src="dessintrad5.JPG" alt="Grimpeur" 
@@ -32,6 +34,16 @@
 		style="height: 30vh; cursor: pointer;" 
 		onclick="document.getElementById('overlay8').style.display='flex'">
 	</div>
+	
+	<div class="grid-item-comment">
+		<p>Will Bosi dans Burden of Dreams<br/>Acrylique - 34cm x 27cm</p>
+	</div>
+	<div class="grid-item-comment">
+		<p>Poules<br/>Acrylique - 54cm x 33cm</p>
+	</div>	<div class="grid-item-comment">
+		<p>Louise MIchel "façon Harry Potter"<br/>Acrylique et feutre - 40cm x 40cm<br/>Réalisé pour l'exposition des 20 ans du cours de Vivien Fawaz à la MJC Louise Michel</p>
+	</div>	
+	
 	<div class="grid-item-photos">
 		<img src="dessintrad1.JPG" alt="Ecosse" 
 		style="height: 30vh; cursor: pointer;" 
@@ -47,19 +59,62 @@
 		style="height: 30vh; cursor: pointer;" 
 		onclick="document.getElementById('overlay4').style.display='flex'">
 	</div>
+	
+	<div class="grid-item-comment">
+		<p>Old Man of Storr<br/>Pastel - A4<br/>Retour de voyage à l'île de Skye en Ecosse</p>
+	</div>
+	<div class="grid-item-comment">
+		<p>Perspective atmosphérique 1 <br/>Pastel - A4<br/>Réalisé sans modèle</p>
+	</div>	<div class="grid-item-comment">
+		<p>Perspective atmosphérique 2<br/>Pastel - A4<br/>Réalisé sans modèle</p>
+	</div>
+	
 	<div class="grid-item-photos">
 		<img src="dessintrad2.JPG" alt="Prekestollen" 
 		style="height: 30vh; cursor: pointer;" 
 		onclick="document.getElementById('overlay2').style.display='flex'">
 	</div>
-</div>
+	<div class="grid-item-photos">
+		
+	</div>
+	<div class="grid-item-photos">
+		
+	</div>
+	
+	<div class="grid-item-comment">
+		<p>Prekestollen<br/>Pastel - A4<br/>Retour de voyage en Norvège</p>
+	</div>
+	<div class="grid-item-comment">
+		<p></p>
+	</div>
+	<div class="grid-item-comment">
+		<p></p>
+	</div>
 
-<h3>Dessins (crayons ...)</h3>
-<div class="grid-item-photos">
+	<div class="grid-item-photos">
 		<img src="dessintrad7.JPG" alt="Chat" 
 		style="height: 30vh; cursor: pointer;" 
 		onclick="document.getElementById('overlay7').style.display='flex'">
 	</div>
+	<div class="grid-item-photos">
+		<img src="dessinnum1.png" alt="Cailloux volants" 
+		style="height: 30vh; cursor: pointer;" 
+		onclick="document.getElementById('overlay9').style.display='flex'">
+	</div>
+	<div class="grid-item-photos">
+		<img src="dessinnum2.png" alt="Puzzle" 
+		style="height: 30vh; cursor: pointer;" 
+		onclick="document.getElementById('overlay10').style.display='flex'">
+	</div>
+	<div class="grid-item-comment">
+		<p>Dessin crayon - 30cm x 42cm</p>
+	</div>
+	<div class="grid-item-comment">
+		<p>??? </p>
+	</div>	<div class="grid-item-comment">
+		<p>???</p>
+	</div>	
+</div>	
 <h4><a href="index.html" >Retour à l'accueil</a></h4>
 
 <div id="overlay1" 
@@ -108,6 +163,27 @@
      onclick="this.style.display='none'"
      style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; cursor: pointer;">
 	<img src="dessintrad8.JPG" alt="Harry Potter - Louise Michel" 
+       style="max-width: 90vw; max-height: 90vh;">
+</div>
+<div id="overlay9" 
+     onclick="this.style.display='none'"
+     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; cursor: pointer;">
+	<img src="dessinnum1.png" alt="Cailloux volants" 
+       style="max-width: 90vw; max-height: 90vh;">
+</div>
+<div id="overlay10" 
+     onclick="this.style.display='none'"
+     style="
+       display: none;
+       position: fixed;
+       top: 0; left: 0;
+       width: 100%; height: 100%;
+       background: rgba(0,0,0,0.8);
+       justify-content: center;
+       align-items: center;
+       cursor: pointer;">
+  
+  <img src="dessinnum2.png" alt="Puzzle" 
        style="max-width: 90vw; max-height: 90vh;">
 </div>
  </body>
