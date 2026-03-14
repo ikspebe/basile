@@ -1,54 +1,61 @@
-
 html, body {
     margin: 0;
     padding: 0;
-	background-image: url('bg.png');
-	background-size: 100%; 
-	background-attachment: fixed;
-	background-repeat: no-repeat; 
-	background-position: center
+    background-image: url('bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
 body {
-	font-family: Verdana, sans-serif; 
+	font-family: 'Forte', Verdana, sans-serif; 
 	color: Indigo;
     font-size: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
 }
+
 h1 {
     font-size: 250%; 
     text-align: center;
 	padding-right: 15px;
 	padding-left: 15px;
 }
+
 h2 {
     font-size: 170%;
 	text-align: center;
 	padding-right: 15px;
 	padding-left: 15px;
 }
+
 h3 {
     font-size: 130%;
 	padding-right: 15px;
 	padding-left: 15px;
 }
+
 p,td,li {
     font-size: 130%;
 	color: Indigo;
 	padding-right: 15px;
 	padding-left: 15px;
 }
+
 ul {
     font-size: 100%;
 	padding-right: 15px;
 	padding-left: 90px;
 }
+
 h4 {
 	font-size: 100%;
 	font-style:italic;
 	text-align:right;
 	font-weight:normal;
 }
+
 h5 {
 	font-size: 130%;
 	font-style:italic;
@@ -61,47 +68,57 @@ a:link {
     color: Indigo;
 	text-decoration: underlined;
 }
+
 a:visited {
 	color: Indigo;
 }
+
 a:active {
 	color:Indigo;
 }
+
 a:hover {
 	color: Indigo;
     text-decoration: none;
 }
+
 .centrer {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 .rouge {
 color: red;
 }
+
 #header{
 	height:0 auto;
 	text-align: center;
 	padding:50px
 }
+
 .yellow{
 	color:yellow;
 	text-decoration: underline;
 }
 
-.balise{ 									/* contiendra les éléments à disposer en "grille" */
-        display: grid; 						/*on active la propriété de la grille css qui permet entre autres, comme ici, de placer différents blocs côte à côte*/
-        grid-template-columns: 60% 40%; 	/* proportion de la largeur disponible sur la page occupée respectivement par les colonnes col1 et col2*/
-        margin-top: 10px; 					/*espace au dessus du div contenant les colonnes col1 et col2*/
-        margin-bottom: 10px; 				/*espace sous le div contenant les colonnes col1 et col2*/
-    }
+.balise{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+
 col1{
-        margin-left: 5px; 					/*marge à gauche de la colonne col1*/
-    }
+        margin-left: 5px;
+}
+
 col2{
-        margin-right: 5px; 					/*marge à gauche de la colonne col2*/
-        margin-left: 5px; 					/*marge à gauche de la colonne col2, entre les deux colonnes*/
-    }
+        margin-right: 5px;
+        margin-left: 5px;
+}
+
 .border {
   border: 3px solid #ccc;
   margin:0px;
@@ -114,6 +131,7 @@ col2{
     grid-gap: 20px;
 	padding:15px
 }
+
 .grid-container-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,6 +139,7 @@ col2{
     grid-gap: 20px;
 	padding:15px
 }
+
 .grid-item {
     display: flex;
 	font-size: 170%;
@@ -137,6 +156,7 @@ col2{
     grid-gap: 20px;
 	padding:15px
 }
+
 .grid-item-films {
     display: flex;
 	font-size: 100%;
@@ -145,6 +165,7 @@ col2{
 	border:none;
 	text-align:center;
 }
+
 .grid-item-films2 {
     display: flex;
 	font-size: 100%;
@@ -153,12 +174,14 @@ col2{
 	border:none;
 	text-align:left;
 }
+
 .grid-container-photos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0px;
 	padding:0px
 }
+
 .grid-item-photos {
     display: flex;
 	font-size: 100%;
@@ -168,6 +191,7 @@ col2{
 	text-align:center;
 	color:plum;
 }
+
 .grid-item-comment {
     display: flex;
 	font-size: 80%;
@@ -178,20 +202,66 @@ col2{
 	color:plum;
 	padding-bottom:20px;
 }
+
 .imageflottante{
 float: right;
 }
+
 video {
 	border-radius:30px;
 	border: 3px solid Indigo;
 }
+
 .imageflottante{
 float: left;
 padding:10px;
 }
+
 .imagefixe{
 	position: fixed;
 	top : 20px;
 	right : 20px;
 	z-index:1000;
+}
+
+@font-face {
+    font-family: 'Forte';
+    src: url('ForteMT.woff2') format('woff2'),
+        url('ForteMT.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+.video{
+    width: 100%;
+    height: auto;
+    max-width: 80%;  /* jamais dépasser la largeur de la colonne */
+    display: block;
+}
+
+/* ----------- AJUSTEMENTS MOBILE ----------- */
+
+@media (max-width: 800px) {
+
+.balise{
+	grid-template-columns: 1fr;
+}
+
+.grid-item{
+	font-size:140%;
+}
+
+.video{
+	width:100%;
+}
+
+/* fond adapté aux téléphones */
+
+html, body{
+	background-attachment: scroll;
+	background-size: cover;
+	background-position: center top;
+}
+
 }
