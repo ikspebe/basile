@@ -2,6 +2,11 @@
 html, body {
     margin: 0;
     padding: 0;
+	background-image: url('bg.png');
+	background-size: 100%; 
+	background-attachment: fixed;
+	background-repeat: no-repeat; 
+	background-position: center
 }
 body {
 	font-family: Verdana, sans-serif; 
@@ -29,6 +34,7 @@ h3 {
 }
 p,td,li {
     font-size: 130%;
+	color: Indigo;
 	padding-right: 15px;
 	padding-left: 15px;
 }
@@ -52,17 +58,17 @@ h5 {
 }
 
 a:link {
-    color: BlueViolet;
+    color: Indigo;
 	text-decoration: underlined;
 }
 a:visited {
-    color: BlueViolet;
+	color: Indigo;
 }
 a:active {
-    color:BlueViolet;
+	color:Indigo;
 }
 a:hover {
-    color: BlueViolet;
+	color: Indigo;
     text-decoration: none;
 }
 .centrer {
@@ -117,7 +123,7 @@ col2{
 }
 .grid-item {
     display: flex;
-	font-size: 130%;
+	font-size: 170%;
     align-items: center;
     justify-content: center;
 	border: 3px solid Indigo;
@@ -178,4 +184,14 @@ float: right;
 video {
 	border-radius:30px;
 	border: 3px solid Indigo;
+}
+.imageflottante{
+float: left;
+padding:10px;
+}
+.imagefixe{
+	position: fixed;
+	top : 20px;
+	right : 20px;
+	z-index:1000;
 }
