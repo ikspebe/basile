@@ -236,6 +236,10 @@ padding:10px;
 	font-size:140%;
 }
 
+iframe{
+	width:100%;
+}
+
 html, body{
 	background-attachment: scroll;
 }
