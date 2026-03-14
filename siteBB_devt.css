@@ -224,6 +224,10 @@ padding:10px;
 	z-index:1000;
 }
 
+.video{
+	width:50vw;
+	max-width:600px;
+}
 /* ----------- AJUSTEMENTS MOBILE ----------- */
 
 @media (max-width: 800px) {
@@ -236,7 +240,7 @@ padding:10px;
 	font-size:140%;
 }
 
-iframe{
+.video{
 	width:100%;
 }
 
