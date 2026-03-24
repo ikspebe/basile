@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BB - Volume ...</title>
+  <title>BB - Volumes</title>
   <link rel="stylesheet" href="siteBB.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
@@ -9,7 +9,7 @@
  
  <body>
 <h2>Basile Bouquet</h2>
-<h1>Sculptures</h1>
+<h1>Volumes ...</h1>
 <h4><a href="index.html" ><img src="maison.png" alt="retour accueil" style="max-width: 10vw; max-height: 10vh;" class="imagefixe";></a></h4>
 <p>Voici des créations en volume.<br/>
 <i>Cliquer pour agrandir la photo.</i></p>
@@ -42,7 +42,7 @@
 		<p>Sculpture bois - merisier<br/>Modèle sur Blender</p>
 	</div>
 	<div class="grid-item-comment">
-		<p>Crayons et collage, réalisé en 24 couches pour un calendrier de l'avent</p>
+		<p>Crayons et collage, réalisé en 24 couches pour un calendrier de l'Avent</p>
 	</div>
 
 <!--Ligne 2-->
@@ -70,6 +70,30 @@
 	</div>
 	<div class="grid-item-comment">
 		<p>Cathédrale Saint Basile - Récup'Art</p>
+	</div>
+	
+<!--Ligne 3-->
+	<div class="grid-item-photos">
+		<img src="cruche1.jpg" alt="Poterie" 
+		style="height: 30vh; cursor: pointer;" 
+		onclick="document.getElementById('overlay8').style.display='flex'">
+	</div>
+	<div class="grid-item-photos">
+		<img src="calendrier2026.jpg" alt="Calendrier" 
+		style="height: 30vh; cursor: pointer;" 
+		onclick="document.getElementById('overlay9').style.display='flex'">
+	</div>
+	<div>
+	</div>
+
+<!--Commentaires ligne 3-->
+	<div class="grid-item-comment">
+		<p>Poterie - 2016</p>
+	</div>
+	<div class="grid-item-comment">
+		<p>Calendrier 2026 avec photos d'Ecosse</p>
+	</div>
+	<div>
 	</div>
 </div>
 	
@@ -113,6 +137,18 @@
      onclick="this.style.display='none'"
      style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; cursor: pointer;">
 	<img src="blender.png" alt="Blender" 
+       style="max-width: 90vw; max-height: 90vh;">
+</div>
+<div id="overlay8" 
+     onclick="this.style.display='none'"
+     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; cursor: pointer;">
+	<img src="cruche1.jpg" alt="Poterie" 
+       style="max-width: 90vw; max-height: 90vh;">
+</div>
+<div id="overlay9" 
+     onclick="this.style.display='none'"
+     style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; cursor: pointer;">
+	<img src="calendrier2026.jpg" alt="Calendrier" 
        style="max-width: 90vw; max-height: 90vh;">
 </div>
 </body>
